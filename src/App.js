@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React, { useEffect } from 'react'
 import './App.css';
 import Header from './Header'
 
@@ -18,6 +19,9 @@ import feature3 from "./main_images/undraw_Followers_re_6k3g.png"
 import {Stack, Button, Box, Typography, CardContent, Card} from "@mui/material";
 
 function App() {
+  useEffect(() => {
+    document.title = "T-Flyer inc."
+  }, [])
   return (
     <div className='App' style={{backgroundColor: "#f4f4f6"}}>
       <Header/>
