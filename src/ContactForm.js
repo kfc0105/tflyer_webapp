@@ -46,6 +46,7 @@ const ContactForm = () => {
                 {formStatus}
                 </button>
             </form>
+            <br></br>
         </div>
     )
 }

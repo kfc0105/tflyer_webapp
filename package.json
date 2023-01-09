@@ -2,8 +2,9 @@
   "name": "tflyter_webapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kfc0105.github.io",
+  "homepage": "https://kfc0105.github.io/tflyer",
   "dependencies": {
+    "-": "^0.0.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.13",
@@ -16,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "save-dev": "^0.0.1-security",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
