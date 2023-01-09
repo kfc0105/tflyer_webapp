@@ -173,6 +173,33 @@ function App() {
       <div className='App'>
         <ContactForm />
       </div>
+      <div style={{margin: 50}}>
+        <Card style={{width:800, height:500,  backgroundColor: "white", borderRadius:30}}>
+          <CardContent>
+            <br></br>
+            <Typography variant='h5' component="h2" >
+              連絡
+            </Typography>
+            <br></br>
+            <Typography variant='h5' component="h2" >
+              会社名　合同会社T-flyter
+            </Typography>
+            <Typography variant='h5' component="h2" >
+              住所　〒150-0002
+              東京都渋谷区2-9-15 宮益坂ビルディング609
+            </Typography>
+            <Typography variant='h5' component="h2" >
+              電話番号　080-1395-8037
+            </Typography>
+            <Typography variant='h5' component="h2" >
+              代表社員　
+              佐々木仁之将
+              欠遼太郎
+              村松亨洋
+            </Typography>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 }
