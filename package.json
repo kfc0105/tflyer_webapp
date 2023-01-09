@@ -2,7 +2,7 @@
   "name": "tflyter_webapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kfc0105.github.io/tflyer",
+  "homepage": "https://kfc0105.github.io/tflyter_webapp",
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.10.5",
@@ -22,11 +22,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
