@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import Header from './Header'
+import {Grid} from "@mui/material"
 
 import styles from "./Background.module.css";
 import background1 from "./main_images/tokyo.jpg"
@@ -28,12 +29,12 @@ function App() {
   return (
     <div className='App' style={{backgroundColor: "#f4f4f6"}}>
       <Header/>
-      <article className={styles.article} style={{ backgroundImage: `url(${background1})` }}>
-        <h1 className={styles.header}>
+      <article className={styles.article} style={{ backgroundImage: `url(${background1})`,aspectRatio: 3/2}}>
+        <h1 className={styles.header} style={{margin: 50}}>
           Tシャツで稼いでみませんか？
         </h1>
       </article>
-      <text>
+      <text style={{margin: 50}}>
         <h1 style={{color: 'purple', fontSize: "60px"}}>
           SERVICES
         </h1>
@@ -44,27 +45,27 @@ function App() {
           color: 'black',
           borderColor: 'back',
           height: '3px',
-          width: '500px',
-          alignContent: "center"
+          alignContent: "center",
+          margin: 50
         }}
       />
-      <text　style={{fontSize: "60px"}}>
+      <text　style={{fontSize: "60px", margin: 50}}>
         Tシャツ広告
       </text>
-      <article className={styles.article} style={{ backgroundImage: `url(${background2})` }}>
-        <h1 className={styles.header}>
+      <article className={styles.article} style={{ backgroundImage: `url(${background2})`, aspectRatio: 3/2}}>
+        <h1 className={styles.header} style={{margin: 20}}>
         Tシャツで広告する新しい選択肢
         </h1>
       </article>
       <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 50}}>
-      <Stack direction="row" spacing={2}>
-        <Button variant="contained" href="/client">
-          広告主 
-        </Button>
-        <Button variant="contained" href="/influencer">
-          インフルエンサー
-        </Button>
-      </Stack>
+        <Stack direction="row" spacing={2}>
+          <Button variant="contained" href="/client">
+            広告主 
+          </Button>
+          <Button variant="contained" href="/influencer">
+            インフルエンサー
+          </Button>
+        </Stack>
       </div>
       <h3>
         コンテンツに溶け込み、安定した視認性を担保​
@@ -75,27 +76,35 @@ function App() {
       <h2>
         T-シャツ広告の三つの強み
       </h2>
-      <div style={{display: 'flex', justifyContent: 'start', alignItems: 'start', margin: 50}}>
-        <Stack direction="row" spacing={5}>
+      <Grid
+        container
+        spacing={5}
+        direction="row"
+        justifyContent="center"
+        align="center"
+      >
+        <Grid item xs={12} md={3}>
           <Card style={{width:350, height:500,  backgroundColor: "white", borderRadius:30}}>
-            <CardContent>
-              <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 10}}>
-                <img style={{width: 200, height: 150}} src={feature1} alt="feature1"/>
-              </div>
-              <Typography variant='h5' component="h2" >
-                特徴１
-              </Typography>
-              <br></br>
-              <Typography variant='h7' component="h2" >
-                画面中央のポジショニングと長時間表示で抜群の視認性
-              </Typography>
-              <br></br>
-              <Typography variant='h10' component="h6">
-                必ず視聴者の目に入る位置に広告が配置される為、全てのインプレッション（広告表示）が視認とイコールに。
+              <CardContent>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 10}}>
+                  <img style={{width: 200, height: 150}} src={feature1} alt="feature1"/>
+                </div>
+                <Typography variant='h5' component="h2" >
+                  特徴１
+                </Typography>
+                <br></br>
+                <Typography variant='h7' component="h2" >
+                  画面中央のポジショニングと長時間表示で抜群の視認性
+                </Typography>
+                <br></br>
+                <Typography variant='h10' component="h6">
+                  必ず視聴者の目に入る位置に広告が配置される為、全てのインプレッション（広告表示）が視認とイコールに。
 
-              </Typography>
-            </CardContent>
-          </Card>
+                </Typography>
+              </CardContent>
+            </Card>
+        </Grid>
+        <Grid item xs={12} md={3}>
           <Card style={{width:350, height:500,  backgroundColor: "white", borderRadius:30}}>
             <CardContent>
               <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 10}}>
@@ -114,6 +123,8 @@ function App() {
               </Typography>
             </CardContent>
           </Card>
+        </Grid>
+        <Grid item xs={12} md={3}>
           <Card style={{width:350, height:500,  backgroundColor: "white", borderRadius:30}}>
             <CardContent>
               <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 10}}>
@@ -129,31 +140,44 @@ function App() {
               <br></br>
               <Typography variant='h10' component="h6">
                 クライアント様の商品・サービスにあった消費者のターゲティングをご提案。SNSのアナリティクスを利用し、性別、年齢、趣向、時間帯、プラットフォーム別のターゲティングが可能です。
-
               </Typography>
             </CardContent>
           </Card>
-        </Stack>
-      </div>
-      <h2>
-        Tシャツを着るだという新しい選択肢
-      </h2>
+        </Grid>
+      </Grid>
+    
       <div style={{margin: 50}}>
-        <Card style={{width:800, height:500,  backgroundColor: "white", borderRadius:30}}>
-          <CardContent>
-            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 10}}>
-              <img style={{width: 400, height: 200}} src={feature4} alt="feature4"/>
-            </div>
-            <Typography variant='h5' component="h2" >
-              一定時間、提供したTシャツを着るのみ
-            </Typography>
-            <br></br>
-            <Typography variant='h10' component="h6">
-              案件同のようにインフルエンサー様が商品の情報を読んだり、使ったりする必要がありません。動画のコンテンツを変えずに、Tシャツを着るだけで報酬を受け取ることが可能です。
-            </Typography>
-          </CardContent>
-        </Card>
+        <Grid
+          container
+          spacing={5}
+          direction="row"
+          justifyContent="center"
+          align="center"
+        >
+          <div style={{margin: 50}}>
+          <h2>
+            Tシャツを着るだという新しい選択肢
+          </h2>
+          </div>  
+          <Grid item xs={12}>
+            <Card style={{width:800, height:500,  backgroundColor: "white", borderRadius:30}}>
+              <CardContent>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 10}}>
+                  <img style={{width: 400, height: 200}} src={feature4} alt="feature4"/>
+                </div>
+                <Typography variant='h5' component="h2" >
+                  一定時間、提供したTシャツを着るのみ
+                </Typography>
+                <br></br>
+                <Typography variant='h10' component="h6">
+                  案件同のようにインフルエンサー様が商品の情報を読んだり、使ったりする必要がありません。動画のコンテンツを変えずに、Tシャツを着るだけで報酬を受け取ることが可能です。
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
       </div>
+        
       <div>
         <h1>
           OUR GOAL
@@ -174,31 +198,28 @@ function App() {
         <ContactForm />
       </div>
       <div style={{margin: 50}}>
-        <Card style={{width:800, height:500,  backgroundColor: "white", borderRadius:30}}>
-          <CardContent>
-            <br></br>
-            <Typography variant='h5' component="h2" >
-              連絡
-            </Typography>
-            <br></br>
-            <Typography variant='h5' component="h2" >
-              会社名　合同会社T-flyter
-            </Typography>
-            <Typography variant='h5' component="h2" >
-              住所　〒150-0002
-              東京都渋谷区2-9-15 宮益坂ビルディング609
-            </Typography>
-            <Typography variant='h5' component="h2" >
-              電話番号　080-1395-8037
-            </Typography>
-            <Typography variant='h5' component="h2" >
-              代表社員　
-              佐々木仁之将
-              欠遼太郎
-              村松亨洋
-            </Typography>
-          </CardContent>
-        </Card>
+        <Typography variant='h5' component="h2" >
+          連絡
+        </Typography>
+        <br></br>
+        <Typography variant='h5' component="h2" >
+          会社名　合同会社T-flyter
+        </Typography>
+        <Typography variant='h5' component="h2" >
+          住所　〒150-0002
+          東京都渋谷区2-9-15 宮益坂ビルディング609
+        </Typography>
+        <Typography variant='h5' component="h2" >
+          電話番号　080-1395-8037
+        </Typography>
+        <Typography variant='h5' component="h2" >
+          代表社員　
+          佐々木仁之将
+          欠遼太郎
+          村松亨洋
+        </Typography>
+        <br></br>
+        <br></br>
       </div>
     </div>
   );

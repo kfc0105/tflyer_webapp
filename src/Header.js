@@ -6,7 +6,7 @@ import { Link as RouterLink} from "react-router-dom"
 //It should typically be obtained with API but this is to make it simple for now
 const headersData = [
     {
-      label: "サービス",
+      label: "service",
       href: "/services",
     },
     {
