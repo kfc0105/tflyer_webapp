@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ca16e8c.css",
-    "main.js": "/static/js/main.f5321251.js",
-    "static/js/787.7d1eb11e.chunk.js": "/static/js/787.7d1eb11e.chunk.js",
-    "static/media/tokyo_sakura.jpg": "/static/media/tokyo_sakura.fff4ceca4f3dc0555055.jpg",
-    "static/media/tokyo.jpg": "/static/media/tokyo.70203f6305945c6be9a1.jpg",
-    "static/media/tshirt.png": "/static/media/tshirt.9e6b761faeeb551cd06a.png",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.6ca16e8c.css.map": "/static/css/main.6ca16e8c.css.map",
-    "main.f5321251.js.map": "/static/js/main.f5321251.js.map",
-    "787.7d1eb11e.chunk.js.map": "/static/js/787.7d1eb11e.chunk.js.map"
+    "main.css": "/tflyter_webapp/static/css/main.6dabd117.css",
+    "main.js": "/tflyter_webapp/static/js/main.9f17c287.js",
+    "static/js/787.7d1eb11e.chunk.js": "/tflyter_webapp/static/js/787.7d1eb11e.chunk.js",
+    "static/media/tokyo_sakura.jpg": "/tflyter_webapp/static/media/tokyo_sakura.fff4ceca4f3dc0555055.jpg",
+    "static/media/tokyo.jpg": "/tflyter_webapp/static/media/tokyo.70203f6305945c6be9a1.jpg",
+    "static/media/スクリーンショット 2022-10-28 17.58.05.png": "/tflyter_webapp/static/media/スクリーンショット 2022-10-28 17.58.05.2386acad056b2ca40c01.png",
+    "static/media/スクリーンショット 2022-10-28 19.16.41.png": "/tflyter_webapp/static/media/スクリーンショット 2022-10-28 19.16.41.ab75b9fa970e52be4872.png",
+    "static/media/undraw_Followers_re_6k3g.png": "/tflyter_webapp/static/media/undraw_Followers_re_6k3g.96eb3964d4e658f88765.png",
+    "static/media/undraw_Landscape_photographer_re_18se (1).png": "/tflyter_webapp/static/media/undraw_Landscape_photographer_re_18se (1).ea9ded50720de2935873.png",
+    "static/media/tshirt.png": "/tflyter_webapp/static/media/tshirt.9e6b761faeeb551cd06a.png",
+    "static/media/logo.svg": "/tflyter_webapp/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/tflyter_webapp/index.html",
+    "main.6dabd117.css.map": "/tflyter_webapp/static/css/main.6dabd117.css.map",
+    "main.9f17c287.js.map": "/tflyter_webapp/static/js/main.9f17c287.js.map",
+    "787.7d1eb11e.chunk.js.map": "/tflyter_webapp/static/js/787.7d1eb11e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ca16e8c.css",
-    "static/js/main.f5321251.js"
+    "static/css/main.6dabd117.css",
+    "static/js/main.9f17c287.js"
   ]
 }
