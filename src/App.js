@@ -22,6 +22,8 @@ import feature4 from "./main_images/スクリーンショット 2022-10-28 19.16
 import {Stack, Button, Box, Typography, CardContent, Card} from "@mui/material";
 import ContactForm from './ContactForm';
 
+//If running into gh-pages only showing readMe page use: https://www.pluralsight.com/guides/fix-create-react-app-showing-readme.md
+
 function App() {
   useEffect(() => {
     document.title = "T-Flyer inc."
@@ -156,7 +158,7 @@ function App() {
         >
           <div style={{margin: 50}}>
           <h2>
-            Tシャツを着るだという新しい選択肢
+            Tシャツを着るという新しい選択肢
           </h2>
           </div>  
           <Grid item xs={12}>
