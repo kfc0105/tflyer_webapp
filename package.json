@@ -2,7 +2,7 @@
   "name": "tflyter_webapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kfc0105.github.io/tflyter_webapp",
+  "homepage": "https://kfc0105.github.io/tflyer_webapp",
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.10.5",
